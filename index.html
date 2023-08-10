@@ -13,7 +13,7 @@
         crossorigin="anonymous" referrerpolicy="no-referrer" />
     <link rel="stylesheet" href="./css/styles.css" />
     <link rel="stylesheet" href="./css/media.css" />
-    <title> subscription </title>
+    <title> Web studio </title>
 </head>
 
 <body class="body">
@@ -21,9 +21,46 @@
     </header>
     <main>
         <section class="subscription">
-            <h1 class="subscription-title"> Newsletter </h1>
+            <div class="container subscription-container">
+                <h1 class="subscription-title"> newsletter </h1>
+                <div class="subscription-form-wrap">
+                    <p class="subscription-subtitle">
+                        Every week we will send you new designs and information about sales.
+                    </p>
+                    <form class="subscription-form">
+                        <div class="subscription-div">
+                            <label for="user-name" class="subscription-input-label"></label>
+                            <div class="subscription-form-wrap">
+                                <input type="text" name="user-name" id="user-name" class="subscription-input"
+                                    placeholder="Name" />
+                            </div>
+                        </div>
+                        <div class="subscription-div">
+                            <label for="user-email" class="subscription-input-label"> </label>
+                            <div class="subscription-input-wrap">
+                                <input type="email" name="user-email" class="subscription-input" placeholder="E-mail"
+                                    id="user-email" />
+                            </div>
+                        </div>
+                        <div class="subscription-check-div">
+                            <input type="checkbox" name="user-privacy" id="user-subscription" value="true"
+                                class="subscription-check" />
+                            <label for="user-subscription" class="subscription-check-text">
+                                Agree to subscribe to the newsletter
+                                <svg class="footer-check-icon" width="25" height="25">
+                                    <use href="./images/checkbox-subscription.svg">
+                                    </use>
+                                </svg>
+                        </div>
+                        <button type="submit" class="subscription-form-btm">Send</button>
+                    </form>
+                </div>
+            </div>
+            <img src="./images/subscription-mob-1x.jpg" width="360" height="300" alt="book table chair" />
+            </div>
         </section>
     </main>
+    <footer></footer>
 </body>
 
 </html>
