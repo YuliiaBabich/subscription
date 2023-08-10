@@ -15,14 +15,11 @@
     <title> subscription </title>
 </head>
 <body>
-
+<header></header>
 <section class="subscription">
 <h1 class="subscription-title> Newsletter </h1>
-
-
 </section>
-
-
+<footer></footer>
 
 </body>
 </html>
