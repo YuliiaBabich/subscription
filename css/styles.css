@@ -24,7 +24,9 @@
       margin-bottom: 20px;
   }
 
-  .subscription-form-wrap {}
+  .subscription-form-wrap {
+      margin-bottom: 30px;
+  }
 
   .subscription-subtitle {
       color: #0A224A;
@@ -51,9 +53,88 @@
       gap: 8px;
 
 
-
       transition: border-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
       background-color: transparent;
       outline: transparent;
+  }
 
+  .subscription-input:hover,
+  .subscription-input:focus,
+  .subscription-input:valid {
+      border: 1px solid #0A224A;
+      color: #0A224A;
+  }
+
+  .subscription-imput:invalid {
+      border: 1px solid #E74A3B;
+      color: #E74A3B;
+  }
+
+  .subscription-check-div {
+      margin-bottom: 32px;
+  }
+
+  .subscription-check {
+      border: 1px solid #B6B6B6;
+  }
+
+  .subscription-input:hover+.subscription-check-icon {
+      fill: #f342a3;
+  }
+
+  .subscription-input:focus+.subscription-check-icon {
+      fill: #f342a3;
+  }
+
+  /* .modal-input::placeholder,
+ .modal-textarea::placeholder {
+     color: rgba(46, 47, 66, 0.40);
+     font-size: 12px;
+     letter-spacing: -0.02em;
+ }
+
+ .modal-input:focus::placeholder {
+     opacity: 0;
+ }
+
+ .modal-input:required {
+     border-color: var(--accent-color);
+ }
+
+ .modal-input:focus+.modal-input::placeholder {
+     fill: var(--accent-color);
+ }*/
+
+  /*  .modal-check:checked+.modal-check-text span {
+       background-color: #404bbf;
+       border: none;
+       fill: #F4F4FD;
+   }*/
+  .subscription-form-btm {
+      display: block;
+      min-width: 224px;
+      height: 56px;
+      padding: 17px 65px;
+      color: #fff;
+      background-color: #0A224A;
+      font-family: Roboto;
+      font-size: 16px;
+      font-style: normal;
+      font-weight: 400;
+      line-height: 1.5em;
+      justify-content: center;
+      align-items: center;
+      gap: 6px;
+      cursor: pointer;
+      transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  }
+
+  .subscription-form-btm:hover,
+  .subscription-form-btm:focus {
+      background-color: #061835;
+  }
+
+  .subscription-img {
+      display: flex;
+      width: 100%;
   }
