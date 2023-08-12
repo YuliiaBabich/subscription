@@ -21,48 +21,55 @@
     </header>
     <main>
         <section class="subscription">
-            <div class="container subscription-container">
-                <h1 class="subscription-title"> Newsletter </h1>
-                <div class="subscription-form-wrap">
-                    <p class="subscription-subtitle">
-                        Every week we will send you new designs and information about sales.
-                    </p>
-                    <form class="subscription-form">
-                        <div class="subscription-div">
-                            <label for="user-name" class="subscription-input-label"></label>
-                            <div class="subscription-form-wrap">
+            <div class="subscription-container">
+                <div class="subscription-div">
+                    <h1 class="subscription-title"> Newsletter </h1>
+                    <div class="subscription-form-wrap">
+                        <p class="subscription-subtitle">
+                            Every week we will send you new designs and information about sales.
+                        </p>
+                        <form class="subscription-form">
+                            <div class="subscription-div">
+                                <label for="user-name" class="subscription-input-label"></label>
+
                                 <input type="text" name="user-name" id="user-name" class="subscription-input"
                                     placeholder="Name" />
+
                             </div>
-                        </div>
-                        <div class="subscription-div">
-                            <label for="user-email" class="subscription-input-label"> </label>
-                            <div class="subscription-input-wrap">
-                                <input type="email" name="user-email" class="subscription-input" placeholder="E-mail"
-                                    id="user-email" minlength="2" maxlength="16" />
+                            <div class="subscription-div">
+                                <label for="user-email" class="subscription-input-label"> </label>
+                                <div class="subscription-input-wrap">
+                                    <input type="email" name="user-email" class="subscription-input"
+                                        placeholder="E-mail" id="user-email" minlength="2" maxlength="16" />
+                                </div>
                             </div>
-                        </div>
-                        <div class="subscription-check-div">
-                            <input type="checkbox" name="user-privacy" id="user-subscription" value="true"
-                                class="subscription-check" />
-                            <label for="user-subscription" class="subscription-check-text">
-                                Agree to subscribe to the newsletter
-                                <svg class="subscription-check-icon" width="25" height="25">
-                                    <use href="./images/checkbox-subscription.svg">
-                                    </use>
-                                </svg>
-                        </div>
-                        <button type="submit" class="subscription-form-btm">
-                            <a class="subscription-form-btm-link link" href=""> Send </a></button>
-                    </form>
+                            <div class="subscription-check-div">
+                                <input type="checkbox" name="user-privacy" id="user-subscription" value="true"
+                                    class="subscription-check " />
+                                <label for="user-subscription" class="subscription-check-text">
+                                    Agree to subscribe to the newsletter
+                                    <svg class="subscription-check-icon visually-hidden" width="13" height="13">
+                                        <use href="./images/subscription-check.svg">
+                                        </use>
+                                    </svg>
+                                    <svg class="subscription-check-scwer-icon" width="25" height=25">
+                                        <use href="./images/subscription-check25.svg">
+                                        </use>
+                                    </svg>
+                            </div>
+                            <button type="submit" class="subscription-form-btm">
+                                <a class="subscription-form-btm-link link" href=""> Send </a></button>
+                        </form>
+                    </div>
                 </div>
+
                 <picture class="subscription-img">
                     <source media="(max-width:767px)"
                         srcset="./images/subscription-mob-1x.jpg 1x, ./images/subscription-mob-2x.jpg 2x" width="343" />
-                    <source media="(min-width:768px) and (max-width:1440px)"
+                    <source media="(min-width:768px) and (max-width:1158px)"
                         srcset="./images/subscriptiont-tab-1x.jpg 1x, ./images/subscriptiont-tab-2x.jpg 2x"
                         width="704" />
-                    <source media="(min-width:1440px)"
+                    <source media="(min-width:1158px)"
                         srcset="./images/subscription-deck-1x.jpg 1x, ./images/subscription-deck-2x.jpg  2x"
                         width="460" />
                     <img src="./images/subscription-tab-1x.jpg 1x" srcset="./images/subscription-tab-2x.jpg 2x"
