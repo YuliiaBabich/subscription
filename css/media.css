@@ -1,12 +1,113 @@
-@media screen and (min-width: 428px) {
-    .container {}
+@media screen and (min-width: 375px) {
+    .container {
+        max-width: 375px;
+    }
+}
 
-    /*!------------------------HERO------------------*/
+@media screen and (min-width: 768px) {
+    .container {
+        max-width: 768px;
+    }
+
+    .subscription {
+        padding: 100px 32PX;
+    }
+
+    .subscription-container {
+        justify-content: start;
+    }
+
+    .subscription-title {
+        text-align: left;
+        font-size: 32px;
+        line-height: 1.4em;
+        margin-bottom: 30px;
+    }
+
+    .subscription-form-wrap {
+        margin-bottom: 64px;
+    }
+
+    .subscription-subtitle {
+        font-size: 18px;
+    }
+
+    .subscription-input {
+        display: flex;
+        width: 536px;
+        height: 50px;
+        align-items: flex-start;
+        color: var(--grey);
+        font-size: 18px;
+        transition: border-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+        background-color: transparent;
+        outline: transparent;
+    }
+
+    .subscription-input:hover,
+    .subscription-input:focus,
+    .subscription-input:valid {
+        border: 1px solid #0A224A;
+        color: #0A224A;
+    }
+
+    .subscription-imput:invalid {
+        border: 1px solid #E74A3B;
+        color: #E74A3B;
+    }
+
+    .subscription-check-text {
+        font-size: 18px;
+    }
+
+    .subscription-check-div {
+        margin-bottom: 30px;
+    }
+
+    .subscription-check {
+        border: 1px solid #B6B6B6;
+    }
+
+    .subscription-input:hover+.subscription-check-icon {
+        fill: #f342a3;
+    }
+
+    .subscription-input:focus+.subscription-check-icon {
+        fill: #f342a3;
+    }
+
+    .subscription-form-btm {
+        width: 224px;
+
+
+
+
+
+    }
+
+    .subscription-form-btm:hover,
+    .subscription-form-btm:focus {
+        background-color: #061835;
+    }
+
+    .subscription-form-btm-link {
+
+        font-size: 18px;
+        line-height: 1.33em;
+
+    }
+
+    .subscription-img {
+        display: block;
+        width: 704px;
+        height: 396px;
+    }
+
 
 }
 
-@media screen and (max-width: 428px) {}
-
-
-
-@media screen and (min-width: 768px) {}
+@media screen and (min-width: 1400px) {
+    .container {
+        max-width: 1440px;
+    }
+}
