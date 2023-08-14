@@ -20,6 +20,10 @@
         align-items: start;
     }
 
+    . subscription-div {
+        margin-bottom: 64px;
+    }
+
     .subscription-title {
         text-align: left;
         font-size: 32px;
@@ -28,13 +32,15 @@
     }
 
     .subscription-form-wrap {
-        margin-bottom: 64px;
+        /*  margin-bottom: 64px;*/
     }
 
     .subscription-subtitle {
         font-size: 18px;
         max-width: 536px;
     }
+
+    .subscription-imput-div {}
 
     .subscription-input {
         display: flex;
@@ -93,6 +99,7 @@
         padding: 0;
         justify-content: start;
         margin-right: 0;
+        margin-bottom: 0;
     }
 
     .subscription-title {
@@ -100,9 +107,7 @@
         margin-bottom: 31px;
     }
 
-    .subscription-form-wrap {
-        margin-bottom: 0;
-    }
+    .subscription-form-wrap {}
 
     .subscription-subtitle {}
 
@@ -135,5 +140,6 @@
         width: 460px;
         height: 410px;
         margin-left: 100px;
+        margin-bottom: 0;
     }
 }

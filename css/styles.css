@@ -1,18 +1,10 @@
  :root {
-     --blue-color
-     /*blue-font*/
-     : #0a224a;
+     --blue-color: #0a224a;
      --grey-color: #7a7a7a;
-     --silver-color
-     /*dark-grey*/
-     : #b6b6b6;
-     --light-grey-color
-     /*grey*/
-     : #d9d9d9;
+     --silver-color: #b6b6b6;
+     --light-grey-color: #d9d9d9;
      --light-blue-color: #f7faff;
-     --white-color
-     /*white*/
-     : #ffffff;
+     --white-color: #ffffff;
  }
 
  .visually-hidden {
@@ -30,10 +22,9 @@
 
  /*!-------скидання стилів--------*/
  p,
- h1,
- {
- margin-top: 0;
- margin-bottom: 0;
+ h2 {
+     margin-top: 0;
+     margin-bottom: 0;
  }
 
  img {
@@ -66,6 +57,10 @@
      align-items: center;
      width: 100%;
      justify-content: center;
+ }
+
+ .subscription-div {
+     margin-bottom: 30px;
  }
 
  .subscription-title {
@@ -119,7 +114,7 @@
 
 
  .subscription-form-wrap {
-     margin-bottom: 30px;
+     /*  margin-bottom: 30px;*/
  }
 
  .subscription-subtitle {
@@ -130,6 +125,11 @@
      font-weight: 400;
      line-height: 1.5em;
      margin-bottom: 30px;
+ }
+
+ .subscription-imput-div {
+     margin-bottom: 20px;
+     position: relative;
  }
 
  .subscription-input {
@@ -145,32 +145,58 @@
      font-style: normal;
      font-weight: 400;
      line-height: 1.5em;
-     margin-bottom: 20px;
      align-items: center;
      transition: border-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
      /* background-color: transparent;*/
      outline: transparent;
+
  }
 
  .subscription-input::placeholder {
      color: var(--light-grey-color, #D9D9D9);
-     color font-family: Roboto;
+     font-family: Roboto;
      font-size: 18px;
      font-style: normal;
      font-weight: 400;
      line-height: 1.5em;
+
  }
 
- /*imput:valid,*/
- imput:hover,
- imput:focus {
+
+ .subscription-input:hover,
+ .subscription-input:focus {
      border: 1px solid #0A224A;
      color: var(--blue-color, #0A224A);
  }
 
- input:invalid {
+
+
+
+ .subscription-input:invalid {
      border: 1px solid #E74A3B;
      color: #E74A3B;
+ }
+
+ .subscription-error-icon {
+     position: absolute;
+     bottom: 100%;
+     top: +25%;
+     left: 90%;
+     visibility: hidden;
+ }
+
+ .subscription-input:invalid+.subscription-error-icon {
+     fill: #E74A3B;
+     position: absolute;
+     bottom: 100%;
+     top: +25%;
+     left: 90%;
+     visibility: visible;
+
+ }
+
+ .subscription-check-div {
+     margin-bottom: 32px;
  }
 
  .subscription-check-text {
@@ -182,9 +208,11 @@
      line-height: 1.5em;
  }
 
- .subscription-check-div {
-     margin-bottom: 32px;
- }
+
+
+ .subscription-check-div {}
+
+ .subscription-check-text {}
 
  .subscription-check {}
 
