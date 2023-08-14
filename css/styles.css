@@ -208,8 +208,6 @@
      line-height: 1.5em;
  }
 
-
-
  .subscription-check-div {}
 
  .subscription-check-text {}
@@ -234,6 +232,7 @@
      fill: #fff;
  }
 
+
  .subscription-form-btm {
      display: block;
      min-width: 224px;
@@ -248,11 +247,32 @@
      line-height: 1.5em;
      text-decoration: none;
      color: var(--white, #fff);
+     position: relative;
+     overflow: hidden;
  }
+
 
  .subscription-form-btm:hover,
  .subscription-form-btm:focus {
      background-color: #061835;
+ }
+
+ .subscription-form-btm:before {
+     content: "";
+     position: absolute;
+     top: 0;
+     left: -100%;
+     width: 100%;
+     height: 100%;
+     background: linear-gradient(120deg,
+             transparent,
+             rgba(61, 250, 74, 0.4),
+             transparent);
+     transition: all 950ms;
+ }
+
+ .subscription-form-btm:hover:before {
+     left: 100%;
  }
 
  .subscription-form-btm-link {
